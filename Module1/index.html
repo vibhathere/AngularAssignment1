@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="eating">
+    <head>
+        <title>Assignment 1</title>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="eatingController">
+            <div>
+                <span>Enter what you ate(comma separated):</span><br>
+                <input type="text" ng-model="list"/>
+                <input type="button" value="Check If Too Much"/>
+            </div>
+            <span>{{list}}</span>
+        </div>
+    </body>
+</html>
